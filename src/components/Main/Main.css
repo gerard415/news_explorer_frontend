@@ -43,6 +43,8 @@
   font-weight: 500;
   align-self: center;
   background: transparent;
+  background-color: #fff;
+  border-radius: 80px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -93,6 +95,7 @@
     flex-direction: column;
     max-width: 320px;
     align-self: center;
+    padding: 55px 16px;
   }
   .cards__result {
     max-width: 288px;

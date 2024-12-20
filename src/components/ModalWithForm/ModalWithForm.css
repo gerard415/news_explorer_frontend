@@ -64,7 +64,7 @@
 .modal__input {
   display: block;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
   margin: 0;
   padding: 8px 0 10px;

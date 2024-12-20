@@ -57,19 +57,19 @@
   transition: background-image 0.5s ease-in-out;
   display: flex;
 }
-.card__button--unsaved {
+.card__button-type-unsaved {
   background-image: url("../../images/noSaveIcon.svg");
 }
-.card__button--saved {
+.card__button-type-saved {
   background-image: url("../../images/savedIcon.svg");
 }
-.card__button--remove {
+.card__button-type-remove {
   background-image: url("../../images/trash.svg");
 }
-.card__button--remove:hover {
+.card__button-type-remove:hover {
   background-image: url("../../images/trashHover.svg");
 }
-.card__button--unsaved:hover {
+.card__button-type-unsaved:hover {
   background-image: url("../../images/saveIconHover.svg");
 }
 .card__info {

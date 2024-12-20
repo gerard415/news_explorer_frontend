@@ -39,7 +39,7 @@ function Nav({ handleSignInClick, isLoggedIn, onLogOut, activeModal }) {
       >
         <ul className="nav__list">
           <li
-            className={`nav__item nav__item--logo ${
+            className={`nav__item nav__item_type_logo ${
               activeModal ? "nav__hide-mobile" : ""
             }`}
           >
@@ -49,14 +49,14 @@ function Nav({ handleSignInClick, isLoggedIn, onLogOut, activeModal }) {
           </li>
 
           <li
-            className={`nav__item nav__item--home ${
-              isSavedNewsPage ? "nav__item--home-hover" : ""
+            className={`nav__item nav__item_type_home ${
+              isSavedNewsPage ? "nav__item_type_home-hover" : ""
             }`}
           >
             <Link
               to="/"
               className={`nav__link ${
-                activeItem === "home" ? "nav__link--active" : ""
+                activeItem === "home" ? "nav__item_type_active" : ""
               }`}
             >
               Home
@@ -65,20 +65,20 @@ function Nav({ handleSignInClick, isLoggedIn, onLogOut, activeModal }) {
           {isLoggedIn ? (
             <>
               <li
-                className={`nav__item nav__item--saved ${
-                  isHomePage ? "nav__item--saved-hover" : ""
+                className={`nav__item nav__item_type_saved ${
+                  isHomePage ? "nav__item_type_saved-hover" : ""
                 }`}
               >
                 <Link
                   to="/saved-news"
                   className={`nav__link ${
-                    activeItem === "saved" ? "nav__link--active" : ""
+                    activeItem === "saved" ? "nav__item_type_active" : ""
                   }`}
                 >
                   Saved articles
                 </Link>
               </li>
-              <li className="nav__item nav__item--logout">
+              <li className="nav__item nav__item_type_logout">
                 <button className="nav__logout">
                   <span className="nav__user-name">
                     {currentUser?.name}Elise

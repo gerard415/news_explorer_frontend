@@ -57,10 +57,10 @@ function NewsCard({
       <button
         className={`card__button ${
           onSavedPage
-            ? "card__button--remove"
+            ? "card__button-type-remove"
             : isSaved
-            ? "card__button--saved"
-            : "card__button--unsaved"
+            ? "card__button-type-saved"
+            : "card__button-type-unsaved"
         }`}
         onClick={handleSave}
         onMouseEnter={() => setShowText(true)}
