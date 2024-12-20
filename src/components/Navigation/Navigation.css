@@ -136,7 +136,7 @@
   font-weight: 500;
   font-size: 18px;
 }
-.nav__item--menu-icon {
+.nav__item_type_menu-icon {
   display: none;
 }
 .nav__menu {
@@ -194,7 +194,7 @@
   }
 }
 @media screen and (max-width: 630px) {
-  .nav__item--menu-icon {
+  .nav__item_type_menu-icon {
     display: block;
     background-color: transparent;
   }

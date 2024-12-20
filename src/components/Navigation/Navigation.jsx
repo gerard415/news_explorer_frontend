@@ -108,7 +108,7 @@ function Nav({ handleSignInClick, isLoggedIn, onLogOut, activeModal }) {
           )}
 
           <li
-            className={`nav__item nav__item--menu-icon ${
+            className={`nav__item nav__item_type_menu-icon ${
               activeModal ? "nav__hide-mobile" : ""
             }`}
           >

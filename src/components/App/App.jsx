@@ -191,21 +191,6 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
       <div className="app">
         <div className="app__content">
-          <div
-            className={`app__search ${
-              isHomePage ? "app__search--with-bg" : ""
-            }`}
-          >
-            <Nav
-              onLogOut={handleLogOut}
-              handleSignInClick={handleSignInClick}
-              isLoggedIn={isLoggedIn}
-              activeModal={activeModal}
-            />
-            {isHomePage && (
-              <Header setSearchTerm={setSearchTerm} onSearch={handleSearch} />
-            )}
-          </div>
           <Routes>
             <Route
               path="/"
@@ -219,6 +204,12 @@ function App() {
                   isLoggedIn={isLoggedIn}
                   searchTerm={searchTerm}
                   onSignInClick={handleSignInClick}
+                  isHomePage={isHomePage}
+                  handleLogOut={handleLogOut}
+                  handleSignInClick={handleSignInClick}
+                  activeModal={activeModal}
+                  setSearchTerm={setSearchTerm}
+                  handleSearch={handleSearch}
                 />
               }
             />
@@ -230,12 +221,15 @@ function App() {
                     savedArticles={savedArticles}
                     onRemoveArticle={removeArticle}
                     keywords={keywords}
+                    handleLogOut={handleLogOut}
+                    handleSignInClick={handleSignInClick}
+                    isLoggedIn={isLoggedIn}
+                    activeModal={activeModal}
                   />
                 </ProtectedRoute>
               }
             />
           </Routes>
-          {isHomePage && <About />}
           <Footer />
         </div>
         <SignIn
